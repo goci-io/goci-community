@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Wiki
+    url: https://github.com/goci-io/goci-community/wiki
+    about: Lookup the wiki for documentation and useful tips
+  - name: Slack
+    url: https://slack.goci.io
+    about: Chat with someone from goci.io
+  - name: GitHub Security Bug Bounty
+    url: https://bounty.github.com/
+    about: Please report security vulnerabilities here.
+ 
