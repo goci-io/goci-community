@@ -22,8 +22,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = u'goci'
-copyright = u'2020, Tim Gatzemeier'
-author = u'Tim Gatzemeier'
+copyright = u'2020, goci.io'
+author = u'goci.io'
 
 # The short X.Y version
 version = u''
@@ -156,7 +156,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'goci', u'goci Documentation',
-     author, 'goci', 'One line description of project.',
+     author, 'goci', 'Cloud made easy. Build, Deploy and Run your Applications on our managed Platform or your own Accounts.',
      'Miscellaneous'),
 ]
 
