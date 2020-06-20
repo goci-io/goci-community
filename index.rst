@@ -12,7 +12,6 @@ Applications
 .. toctree::
    :glob:
    :maxdepth: 2
-   :caption: Contents:
 
    docs/applications/not-ready/*
    docs/applications/not-ready/github/*
