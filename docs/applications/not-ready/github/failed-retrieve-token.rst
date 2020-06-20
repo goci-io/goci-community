@@ -1,6 +1,6 @@
-***********************************************
-Application not Ready - "Failed retrieve Token"
-***********************************************
+**********************************
+Failed retrieve Installation Token
+**********************************
 
 When you are seeing an Error message saying "Error retrieving Github Installation Token" we were not able to generate a temporary Token to connect your Github Organization.
 Please make sure:

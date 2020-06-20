@@ -8,4 +8,4 @@ You can find out how to resolve them here.
    :glob:
    :maxdepth: 1
 
-    *
+    ./*
