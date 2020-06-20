@@ -41,6 +41,7 @@ release = u'0.1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autosectionlabel',
     'sphinx.ext.intersphinx',
     'sphinx.ext.ifconfig',
     'sphinx.ext.githubpages',
@@ -162,6 +163,8 @@ texinfo_documents = [
      author, 'goci', 'Cloud made easy. Build, Deploy and Run your Applications on our managed Platform or your own Accounts.',
      'Miscellaneous'),
 ]
+
+autosectionlabel_prefix_document = True
 
 # sphinx-notfound-page
 # https://github.com/readthedocs/sphinx-notfound-page
