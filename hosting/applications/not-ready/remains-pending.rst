@@ -10,4 +10,4 @@ When an Application does not even chage into "Provisioning" State you have to co
 We are sorry for any Inconvenience or Delay caused by this Issue. 
 
 **Not sure if you are having this Issue?**    
-You must see a gray Indicator saying "Pending" in your Applications Overview Dashboard
+You must see a gray Indicator saying "Pending" in your Applications Overview Dashboard for a longer time. Please note that it can sometimes take a few Minutes before a State changes into "Provisioning". Please only reach out if the Issues persist for more than 15 Minutes.
