@@ -12,11 +12,3 @@ Welcome to goci's documentation!
 
    docs/applications/definition
    docs/applications/not-ready/index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

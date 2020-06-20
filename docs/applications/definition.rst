@@ -9,4 +9,7 @@ To fulfill the desired State of your Application our Watcher creates a new Kuber
 Manifest
 --------
 
-You can find the complete Resource Definition `here </_static/assets/crds/application.yaml>`_
+Below you can find the full Resource Definition. You can also suggest changes to it on `GitHub <https://github.com/goci-io/goci-community/edit/master/_static/assets/crds/application.yaml>`_ 
+
+.. literalinclude:: /_static/assets/crds/application.yaml
+   :language: yaml
