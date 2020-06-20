@@ -13,6 +13,6 @@ Please make sure:
 How to resolve
 --------------
 
-#. Authorize and Installs our `Github App <https://github.com/apps/goci-io-bot>`_
+#. Authorize and Install our `Github App <https://github.com/apps/goci-io-bot>`_
 #. Click on the failing Application item -> "Edit Application" to change your Installation ID
 #. To resolve a Rate Limiting Issue you will have to wait and avoid too many write Operations
