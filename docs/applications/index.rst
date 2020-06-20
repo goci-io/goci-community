@@ -1,12 +1,10 @@
 Applications
 ============
 
-Application not Ready
----------------------
-
 .. toctree::
    :glob:
    :maxdepth: 2
+   :caption: Not Ready State
 
    not-ready/*
    not-ready/github/*

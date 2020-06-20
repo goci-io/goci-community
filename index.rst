@@ -7,12 +7,10 @@ Welcome to goci's documentation!
 ================================
 
 .. toctree::
-   :glob:
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Applications
 
-   docs/applications/not-ready/*
-   docs/applications/not-ready/github/*
+   docs/applications/index
 
 
 Indices and tables
