@@ -7,4 +7,5 @@ When your Application is stuck in a specific State you can find out more about t
    :maxdepth: 2
 
    remains-pending
+   goci/index
    github/index
