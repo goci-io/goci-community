@@ -6,12 +6,10 @@
 Welcome to goci's documentation!
 ================================
 
-Applications
---------
-
 .. toctree::
    :glob:
    :maxdepth: 2
+   :caption: Applications
 
    docs/applications/not-ready/*
    docs/applications/not-ready/github/*

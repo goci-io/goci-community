@@ -1,8 +1,8 @@
 Applications
-==================
+============
 
 Application not Ready
---------
+---------------------
 
 .. toctree::
    :glob:
