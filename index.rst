@@ -10,7 +10,7 @@ Welcome to goci's documentation!
    :maxdepth: 1
    :caption: Applications
 
-   docs/applications/index
+   docs/applications/not-ready/*
 
 
 Indices and tables
