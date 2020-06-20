@@ -5,6 +5,6 @@ There might be some problems with our Service-Platform. Some Issues might resolv
 
 .. toctree::
    :glob:
-   :maxdepth: 2
+   :maxdepth: 1
 
    *

@@ -6,6 +6,6 @@ You can find out how to resolve them here.
 
 .. toctree::
    :glob:
-   :maxdepth: 2
+   :maxdepth: 1
 
    *
