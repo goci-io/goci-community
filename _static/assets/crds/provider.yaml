@@ -75,7 +75,7 @@ spec:
                 default: false
               stackVersion:
                 type: string
-                description: 'Current Version used to provision or update the Application'
+                description: 'Current Version used to provision or update the Provider Resources'
               job:
                 type: string
                 description: 'ID of an Job fulfilling tasks to change into desired Ready state'
