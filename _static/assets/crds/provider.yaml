@@ -1,0 +1,107 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: providers.stable.goci.io
+spec:
+  group: stable.goci.io
+  scope: Namespaced
+  names:
+    plural: providers
+    singular: provider
+    kind: Provider
+    categories:
+    - all
+    - goci
+  versions:
+  - name: v1
+    served: true
+    storage: true
+    subresources:
+      status: {}
+    schema:
+      openAPIV3Schema:
+        type: object
+        required:
+        - spec
+        properties:
+          spec:
+            type: object
+            required:
+            - apiGroup
+            - repository
+            properties:
+              apiGroup:
+                type: string
+              repository:
+                type: object
+                required:
+                - name
+                - rawHost
+                - release
+                - organization
+                properties:
+                  name:
+                    type: string
+                  organization:
+                    type: string
+                  rawHost:
+                    type: string
+                    description: 'Host to retrieve raw files from version control system'
+                  release:
+                    type: string
+                    description: 'Branch or Tag to release'
+
+          status:
+            type: object
+            required:
+            - ready
+            - phase
+            properties:
+              ready:
+                type: boolean
+                default: false
+              phase:
+                type: string
+                default: Pending
+                enum:
+                - Pending
+                - Provisioning
+                - Destroying
+                - Modifying
+                - Error
+                - Ready
+              verified:
+                type: boolean
+                default: false
+              stackVersion:
+                type: string
+                description: 'Current Version used to provision or update the Provider Resources'
+              job:
+                type: string
+                description: 'ID of an Job fulfilling tasks to change into desired Ready state'
+              error:
+                type: object
+                required:
+                - code
+                properties:
+                  code:
+                    type: string
+                  message:
+                    type: string
+                  provider:
+                    type: string
+                    description: 'Provider which issued the Error'
+
+    additionalPrinterColumns:
+    - name: ApiGroup
+      type: string
+      description: 'API Group for this Provider to use'
+      jsonPath: .spec.apiGroup
+    - name: Phase
+      type: string
+      description: Current phase the Application is in
+      jsonPath: .status.phase
+    - name: Verified
+      type: boolean
+      description: 'Whether the Providers is verified by goci.io'
+      jsonPath: .status.verified
