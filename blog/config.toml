@@ -1,0 +1,20 @@
+baseURL = "https://blog.goci.io/"
+languageCode = "en-us"
+title = "goci.io Blog"
+theme = "jeffprod"
+enableRobotsTXT = true
+homepage = "https://goci.io"
+tags = ["kubernetes", "ci", "aws", "security", "cloud", "terraform"]
+
+[permalinks]
+    post = "/:year/:filename"
+    benefits-at-goci = "/benefits-at-goci/:filename"
+
+[params]
+    GitHubUser = "goci-io"
+    SidebarRecentLimit = 8
+    Title = "Stay up to Date with goci.io"
+
+[taxonomies]
+    tag = "tags"
+    archive = "archives"
