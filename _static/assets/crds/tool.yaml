@@ -33,40 +33,12 @@ spec:
               module:
                 type: object
                 properties:
-                  terraform:
-                    type: object
-                    properties:
-                      version:
-                        type: string
-                      source:
-                        type: string
-                      sourceVersion:
-                        type: string
-                  docker:
-                    type: object
-                    properties:
-                      image:
-                        type: string
-                        maxLength: 96
-                      version:
-                        type: string
-                        maxLength: 60
-                oneOf:
-                - required:
-                  - terraform
-                  properties:
-                    terraform:
-                      required:
-                      - version
-                      - source
-                      - sourceVersion
-                - required:
-                  - docker
-                  properties:
-                    docker:
-                      required:
-                      - image
-                      - version
+                  source:
+                    type: string
+                    maxLength: 128
+                  version:
+                    type: string
+                    maxLength: 32
 
               providers:
                 type: object
