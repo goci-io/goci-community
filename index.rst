@@ -10,5 +10,4 @@ Welcome to goci's documentation!
    :maxdepth: 1
    :caption: Applications
 
-   applications/definition
-   applications/not-ready/index
+   tools/not-ready/index
