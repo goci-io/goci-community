@@ -29,7 +29,12 @@ spec:
             required:
             - input
             - module
+            - type
             properties:
+              type:
+                type: string
+                maxLength: 96
+
               module:
                 type: object
                 properties:
@@ -40,24 +45,37 @@ spec:
                     type: string
                     maxLength: 32
 
-              providers:
+              connections:
                 type: object
                 properties:
                   github:
                     type: object
                     properties:
-                      gociBotEnabled:
-                        type: boolean
-                        default: false
-                      organization:
-                        type: string
-                        description: 'GitHub Organization when using goci.io/bot App'
-                      installationId:
-                        type: string
-                        description: 'Installation ID of goci.io/bot GitHub App'
                       secretKeyRef:
                         type: object
                         description: 'Secret containing GITHUB_TOKEN and GITHUB_ORGANIZATION'
+                        required:
+                        - name
+                        properties:
+                          name:
+                            type: string
+                  gitlab:
+                    type: object
+                    properties:
+                      secretKeyRef:
+                        type: object
+                        description: 'Secret containing GITLAB_TOKEN and GITLAB_ORGANIZATION'
+                        required:
+                        - name
+                        properties:
+                          name:
+                            type: string
+                  bitbucket:
+                    type: object
+                    properties:
+                      secretKeyRef:
+                        type: object
+                        description: 'Secret containing BITBUCKET_TOKEN and BITBUCKET_ORGANIZATION'
                         required:
                         - name
                         properties:
@@ -76,16 +94,6 @@ spec:
                             type: string
               input:
                 x-kubernetes-preserve-unknown-fields: true
-              
-              secretKeyRefs:
-                type: array
-                items:
-                  type: object
-                  required:
-                  - name
-                  properties:
-                    name:
-                      type: string
 
           status:
             type: object
