@@ -28,22 +28,11 @@ spec:
             type: object
             required:
             - input
-            - module
             - type
             properties:
               type:
                 type: string
                 maxLength: 96
-
-              module:
-                type: object
-                properties:
-                  source:
-                    type: string
-                    maxLength: 128
-                  version:
-                    type: string
-                    maxLength: 32
 
               connections:
                 type: object
