@@ -121,12 +121,6 @@ spec:
                   provider:
                     type: string
                     description: 'Provider which issued the Error'
-              outputs:
-                type: array
-                description: 'List of Outputs exposed by this Tool'
-                items:
-                  type: string
-                  maxLength: 128
 
     additionalPrinterColumns:
     - name: Phase
