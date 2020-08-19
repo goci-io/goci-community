@@ -112,8 +112,15 @@ spec:
                 type: string
                 description: 'Current Version used to provision or update the Provider Resources'
               job:
-                type: string
-                description: 'ID of an Job fulfilling tasks to change into desired Ready state'
+                type: object
+                description: 'Details about Job fulfilling tasks to change into desired Ready state'
+                required:
+                - id
+                properties:
+                  createdAt:
+                    type: date
+                  id:
+                    type: string
               error:
                 type: object
                 required:
