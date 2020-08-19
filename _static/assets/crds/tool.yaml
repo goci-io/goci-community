@@ -115,11 +115,11 @@ spec:
                 type: object
                 description: 'Details about Job fulfilling tasks to change into desired Ready state'
                 required:
-                - id
+                - name
                 properties:
                   createdAt:
                     type: date
-                  id:
+                  name:
                     type: string
               error:
                 type: object
