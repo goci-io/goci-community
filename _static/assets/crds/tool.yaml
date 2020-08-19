@@ -29,10 +29,15 @@ spec:
             required:
             - input
             - type
+            - version
             properties:
               type:
                 type: string
                 maxLength: 96
+                
+              version:
+                type: string
+                maxLength: 56
 
               connections:
                 type: object
