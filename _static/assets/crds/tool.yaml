@@ -38,6 +38,11 @@ spec:
               version:
                 type: string
                 maxLength: 56
+                
+              appVersion:
+                type: string
+                maxLength: 56
+                description: 'App Version to be used for the Stack. Usually referenced to the Docker Image Tag'
 
               connections:
                 type: object
