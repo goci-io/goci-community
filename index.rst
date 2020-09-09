@@ -8,6 +8,6 @@ Welcome to goci's documentation!
 
 .. toctree::
    :maxdepth: 1
-   :caption: Applications
+   :caption: Tools
 
    tools/not-ready/index
