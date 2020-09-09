@@ -1,7 +1,7 @@
 Not Ready State
 ===============
 
-When your Application is stuck in a specific State you can find out more about the Issues here and how to resolve it.
+When any Tool is stuck in a specific State you can find out more about the Issues here and how to resolve it.
 
 .. toctree::
    :maxdepth: 1
