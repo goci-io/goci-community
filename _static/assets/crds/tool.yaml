@@ -100,8 +100,9 @@ spec:
                         required:
                         - url
                         properties:
-                          url: string
-                          maxLength: 128
+                          url:
+                            type: string
+                            maxLength: 128
                   
               input:
                 x-kubernetes-preserve-unknown-fields: true
