@@ -92,20 +92,20 @@ spec:
                           name:
                             type: string
                   
-                webhooks:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      secretKeyRef:
-                        type: object
-                        description: 'Secret containing URL pointing to the Webhook Endpoint'
-                        required:
-                        - name
-                        properties:
-                          name:
-                            type: string
-                            maxLength: 128
+                  webhooks:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        secretKeyRef:
+                          type: object
+                          description: 'Secret containing URL pointing to the Webhook Endpoint'
+                          required:
+                          - name
+                          properties:
+                            name:
+                              type: string
+                              maxLength: 128
                   
               input:
                 x-kubernetes-preserve-unknown-fields: true
