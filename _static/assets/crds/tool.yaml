@@ -99,7 +99,7 @@ spec:
                       properties:
                         secretKeyRef:
                           type: object
-                          description: 'Secret containing URL pointing to the Webhook Endpoint'
+                          description: 'Secret containing TYPE and URL pointing to the Webhook Endpoint'
                           required:
                           - name
                           properties:
